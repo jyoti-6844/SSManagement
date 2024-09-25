@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/lightgrey"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="50dp"
+            android:id="@+id/task_daily"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SS Work Task Daily"
+                    android:textSize="20dp"
+                    android:layout_weight="3.5"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/next"
+                    android:layout_weight="0.5"
+                    app:tint="@color/appcolor"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/lightgreen"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/task_completed"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SS Task Complete (UPSRTC)"
+                    android:textSize="20dp"
+                    android:layout_weight="3.5"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/next"
+                    android:layout_weight="0.5"
+                    app:tint="@color/appcolor"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/lightgrey"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/task_rmMeeting"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM Meeting"
+                    android:textSize="20dp"
+                    android:layout_weight="3.5"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/next"
+                    android:layout_weight="0.5"
+                    app:tint="@color/appcolor"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/lightgreen"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/task_spvs"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MD SPVS Meeting"
+                    android:textSize="20dp"
+                    android:layout_weight="3.5"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/next"
+                    android:layout_weight="0.5"
+                    app:tint="@color/appcolor"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/lightgrey"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/task_personal"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SS Personal Meeting"
+                    android:textSize="20dp"
+                    android:layout_weight="3.5"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/next"
+                    android:layout_weight="0.5"
+                    app:tint="@color/appcolor"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/lightgreen"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/task_other"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Task"
+                    android:textSize="20dp"
+                    android:layout_weight="3.5"
+                    android:gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/next"
+                    app:tint="@color/appcolor" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

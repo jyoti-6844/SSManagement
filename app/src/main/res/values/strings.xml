@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Work Management System</string>
+    <string-array name="work_status">
+        <item>Completed</item>
+        <item>Not Completed</item>
+        <item>Progress</item>
+        <item>Hold</item>
+        <item>Pending</item>
+    </string-array>
+    <string-array name="task">
+        <item>SS Work Task Daily</item>
+        <item>SS Task Complete (UPSRTC)</item>
+        <item>RM Meeting</item>
+        <item>MD SPVS Meeting</item>
+        <item>SS Personal Meeting</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="expense">
+        <item>Office Bill</item>
+        <item>Travel Bill</item>
+        <item>Hotel Bill</item>
+        <item>TADA Plan</item>
+    </string-array>
+    <string-array name="names">
+        <item>MD</item>
+        <item>Sachin</item>
+        <item>Lnshukla</item>
+        <item>Virendra</item>
+        <item>Shivam</item>
+    </string-array>
+    <string-array name="approvalBy">
+        <item>MD</item>
+        <item>FO</item>
+    </string-array>
+</resources>

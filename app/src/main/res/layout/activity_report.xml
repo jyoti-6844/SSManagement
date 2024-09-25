@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ReportActivity">
+    <include layout="@layout/header_lay"
+        android:id="@+id/title"/>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        app:boxStrokeColor="@color/appcolor"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        android:id="@+id/txtInputLayout"
+        app:boxBackgroundMode="outline"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Task"
+            android:textColor="@color/mediumgrey"
+           android:inputType="none"
+            android:id="@+id/autoCompleteTxtView"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_fromdate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtInputLayout"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/appcolor"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:weightSum="3"
+            android:paddingStart="15dp"
+           >
+            <EditText
+                android:id="@+id/edt_fromDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="From Date"
+                android:background="@null"
+                android:inputType="none"
+                android:layout_weight="2.5"
+                android:focusable="false"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/calender"
+                android:layout_weight="0.5"
+                android:id="@+id/imge_fromDate"/>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_todate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_fromdate"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/appcolor"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:weightSum="3"
+            android:paddingStart="15dp"
+            >
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="To Date"
+                android:background="@null"
+                android:inputType="none"
+                android:layout_weight="2.5"
+                android:id="@+id/edt_todate"
+                android:focusable="false"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/calender"
+                android:layout_weight="0.5"
+                android:id="@+id/imge_toDate"/>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="144dp"
+        android:backgroundTint="@color/appcolor"
+        android:text="SHOW"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

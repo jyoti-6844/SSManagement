@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DailyTaskListStausActivity">
+
+   <include layout="@layout/header_lay"
+       android:id="@+id/title"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+       android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/txtInputLayout"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:elevation="5dp"
+                    >
+                        <AutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Status"
+                            android:inputType="none"
+                            android:textColor="@color/mediumgrey"
+                            android:id="@+id/autoCompleteTxtView"
+                            />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/task_checkBy"
+                android:layout_marginTop="20dp"
+                app:cardElevation="5dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                app:cardBackgroundColor="@color/white"
+                >
+                <EditText
+                    android:id="@+id/edt_checkBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Checked By"
+                    android:textColorHint="@color/mediumgrey"
+                    android:paddingStart="10dp"
+                    android:inputType="text"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/task_remarks"
+                android:layout_marginTop="20dp"
+                app:cardElevation="5dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                app:cardBackgroundColor="@color/white"
+                >
+                <EditText
+                    android:id="@+id/edt_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Remarks"
+                    android:textColorHint="@color/mediumgrey"
+                    android:paddingStart="10dp"
+                    android:inputType="text"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SAVE"
+                android:backgroundTint="@color/appcolor"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
